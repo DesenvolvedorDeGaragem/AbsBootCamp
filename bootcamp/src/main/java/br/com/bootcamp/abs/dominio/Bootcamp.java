@@ -6,12 +6,22 @@ import java.util.LinkedHashSet;
 import java.util.Objects;
 import java.util.Set;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+/**
+ * Representa um bootcamp.
+ * Um bootcamp é composto por um nome, uma descrição, uma data inicial e uma data final.
+ * Ele também contém conjuntos de desenvolvedores inscritos e conteúdos.
+ */
 @Getter
 @Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class Bootcamp {
+    
     private String nome;
     private String descricao;
     private final LocalDate dataInicial = LocalDate.now();
